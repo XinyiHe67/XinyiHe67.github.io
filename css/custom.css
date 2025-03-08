@@ -96,3 +96,9 @@
       min-height: 40px;
     }
   }
+
+  .loading-img {
+    background: url("https://olivia.agrimes.net.cn/img/avatar.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  
