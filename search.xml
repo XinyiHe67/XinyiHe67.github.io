@@ -5,14 +5,86 @@
     
     <entry>
       
-        <title>Hello World</title>
+        <title>Tensorflow 2.7 conda环境配置</title>
       
-      <link href="/2025/03/06/hello-world/"/>
-      <url>/2025/03/06/hello-world/</url>
+      <link href="/2025/03/08/Tensorflow%202.7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+      <url>/2025/03/08/Tensorflow%202.7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>本文记录Tenflow 2.7版本在 anaconda环境上的配置脚本。打开anaconda prompt,输入如下命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">conda create -n tf_gpu python=3.9</span><br><span class="line">conda activate tf_gpu</span><br><span class="line">pip install tensorflow-gpu=2.7</span><br><span class="line">conda install -c conda-forge cudatoolkit=11.6</span><br><span class="line">conda install cudnn=8.3</span><br><span class="line">pip install protobuf==3.20</span><br><span class="line">pip install numpy==1.23.4</span><br><span class="line">conda install keras=2.7</span><br><span class="line">pip install scikeras==0.6</span><br><span class="line">conda install pandas</span><br><span class="line">conda install matplotlib</span><br><span class="line">pip install scikit-learn==1.0.2</span><br></pre></td></tr></table></figure><p>经实际测试，以上各版本的包之间不会存在依赖冲突，如果有绘制高质量图表的需求，可额外引入：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install seaborn</span><br></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> 综合 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术文档 </tag>
+            
+            <tag> 环境配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
+        <title>常用shell脚本</title>
+      
+      <link href="/2025/03/08/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/"/>
+      <url>/2025/03/08/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/</url>
+      
+        <content type="html"><![CDATA[<p>本文储存一些作者平时经常用到的shell脚本，以备不时之需。</p><h2 id="禁止该系统运行脚本"><a href="#禁止该系统运行脚本" class="headerlink" title="禁止该系统运行脚本"></a>禁止该系统运行脚本</h2><p>有些时候在终端运行脚本时，会出现“禁止运行脚本”的报错，这种情况下需要用如下命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Set-ExecutionPolicy Bypass -Scope Process</span><br></pre></td></tr></table></figure><p>即可在当前终端临时许可脚本的运行。</p><h2 id="git相关常用命令"><a href="#git相关常用命令" class="headerlink" title="git相关常用命令"></a>git相关常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git init   <span class="comment">#（创建.git隐藏文件夹）</span></span><br><span class="line">git add *  <span class="comment">#（添加全部文件夹）</span></span><br><span class="line">git commit -m <span class="string">&quot; first commit&quot;</span> <span class="comment">#（将文件夹里的文件先上传至本地git）</span></span><br><span class="line">git remote add origin <span class="comment">#（添加远程github的code网址，注意是SSH code）</span></span><br><span class="line">git branch -M main <span class="comment">#（这个操作是把默认分支从master 切换到main）</span></span><br><span class="line">git push -u origin master <span class="comment">#(虽然默认的是master，选择master大概会创建一个master分支）</span></span><br><span class="line"><span class="comment">#（人生建议，别把文件传到Main里去，不然会很麻烦，不过建议以后建立仓库不要勾选初始化read me文件）</span></span><br></pre></td></tr></table></figure><h2 id="本地上传code到github出现文件缺失"><a href="#本地上传code到github出现文件缺失" class="headerlink" title="本地上传code到github出现文件缺失"></a>本地上传code到github出现文件缺失</h2><p>有些时候把本地的code 上传到Server，再次clone下来时，发现少了些文件。原来是 git 工具不上传一些二进制，pdf，.patch等一些文件。在上传时，git会把这些文件标记为.gitignore文件。所以，我们在上传完文件，使用如下命令检查下：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">find ./ -name <span class="string">&quot;*.gitignore&quot;</span></span><br><span class="line"><span class="comment"># 一旦发现有文件被标志为.gitignore。需要删除：</span></span><br><span class="line">find ./ -name <span class="string">&quot;*.gitignore&quot;</span>  | xargs  <span class="built_in">rm</span></span><br></pre></td></tr></table></figure><h2 id="将VScode上的ipynb文件转换成markdown文件"><a href="#将VScode上的ipynb文件转换成markdown文件" class="headerlink" title="将VScode上的ipynb文件转换成markdown文件"></a>将VScode上的ipynb文件转换成markdown文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">以某次的5318大作业文件为例</span></span><br><span class="line">python -m jupyter nbconvert --to markdown &quot;C:\Users\16624\Desktop\悉大24年S2资料\5318\Assignment1\Assignment1_Comp5318_2024S2 - 副本.ipynb&quot;</span><br></pre></td></tr></table></figure><p>后续若有其他常用指令集，本文仍将持续更新。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 综合 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> shell </tag>
+            
+            <tag> bash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
+        <title>Hexo框架博客相关常用命令</title>
+      
+      <link href="/2025/03/06/Hexo%E6%A1%86%E6%9E%B6%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
+      <url>/2025/03/06/Hexo%E6%A1%86%E6%9E%B6%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<p>Hexo框架更多常用指令请从 <a href="https://hexo.io/docs/">Documentation</a> 获取详细信息。出现相关问题请于 <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> 浏览查询，或者搜索官方的 <a href="https://github.com/hexojs/hexo/issues">GitHub</a> 寻求进一步的解决。</p><h2 id="创建一个新的博客"><a href="#创建一个新的博客" class="headerlink" title="创建一个新的博客"></a>创建一个新的博客</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h2 id="运行服务"><a href="#运行服务" class="headerlink" title="运行服务"></a>运行服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/server.html">Server</a></p><h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h2 id="部署到远程网址"><a href="#部署到远程网址" class="headerlink" title="部署到远程网址"></a>部署到远程网址</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 综合 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 命令集 </tag>
+            
+            <tag> 技术文档 </tag>
+            
+        </tags>
       
     </entry>
     
