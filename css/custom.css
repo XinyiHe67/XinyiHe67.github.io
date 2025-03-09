@@ -257,15 +257,19 @@ body {
   background-image: url('/img/73.jpg') !important;
 }
 
-/* 移动端适配 */
-@media screen and (max-width: 768px) {
-  body {
-      background-size: 100% auto; /* 避免图片过大 */
-      background-position: center;
+@media screen and (max-width: 800px) {
+  #web_bg {
+      background-image: url('/img/37.png') !important;
+      background-size: cover !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      background-attachment: local !important; /* 关键 */
+      min-height: 100vh !important;
+      height: 100%;
+      width: 100%;
   }
 
-  [data-theme="dark"] body {
-      background-size: 100% auto;
-      background-position: center;
+  [data-theme="dark"] #web_bg {
+      background-image: url('/img/73.jpg') !important;
   }
 }
