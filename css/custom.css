@@ -248,11 +248,13 @@
 /* 默认背景（Light Mode） */
 body {
   background-image: url('/img/37.png') !important;
-  background-size: cover;
+  background-size: cover;  /* 让背景填满屏幕 */
+  background-position: center center;
   background-attachment: fixed;
+  background-repeat: no-repeat;  /* 禁止重复 */
 }
 
-/* Dark Mode 背景（支持手机端） */
+/* Dark Mode 背景 */
 [data-theme="dark"] body {
   background-image: url('/img/73.jpg') !important;
 }
@@ -260,12 +262,11 @@ body {
 /* 移动端适配 */
 @media screen and (max-width: 768px) {
   body {
-      background-size: contain; /* 避免图片过大 */
-      background-position: center;
+      background-size: 100% auto;  /* 让背景自适应宽度，防止重复 */
+      background-attachment: scroll; /* 适配移动端，避免滚动时出现多个背景 */
   }
 
   [data-theme="dark"] body {
-      background-size: contain;
-      background-position: center;
+      background-size: 100% auto;
   }
 }
