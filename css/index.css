@@ -4886,6 +4886,29 @@ maxWidth1200()
     display: none;
   }
 }
+[data-theme="dark"] #web_bg {
+  background: $web-bg;
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  #web_bg {
+    background: $web-bg !important;
+    background-attachment: local !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+  [data-theme="dark"] #web_bg {
+    background: $web-bg !important;
+    background-attachment: local !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+}
 .container .btn-center {
   margin: 0 0 20px;
   text-align: center;

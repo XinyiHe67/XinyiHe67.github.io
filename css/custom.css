@@ -244,3 +244,19 @@
     text-shadow: #5636ed 0 0 5px;
   }
 }
+
+/* 默认 Light Mode 背景 */
+:root {
+  --web-bg: url(/img/37.png); 
+}
+
+/* Dark Mode 背景 */
+[data-theme="dark"] {
+  --web-bg: url(/img/73.jpg);
+}
+
+/* 强制覆盖 body 背景 */
+body {
+  background: var(--web-bg) no-repeat center center fixed !important;
+  background-size: cover !important;
+}
