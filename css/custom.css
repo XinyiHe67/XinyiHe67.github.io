@@ -260,7 +260,7 @@ body {
 }
 
 /* 移动端适配 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   body {
       background-size: 100% auto;  /* 让背景自适应宽度，防止重复 */
       background-attachment: scroll; /* 适配移动端，避免滚动时出现多个背景 */
