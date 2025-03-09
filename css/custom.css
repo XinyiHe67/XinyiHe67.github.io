@@ -248,25 +248,24 @@
 /* 默认背景（Light Mode） */
 body {
   background-image: url('/img/37.png') !important;
-  background-size: cover;  /* 让背景填满屏幕 */
-  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;  /* 禁止重复 */
 }
 
-/* Dark Mode 背景 */
+/* Dark Mode 背景（支持手机端） */
 [data-theme="dark"] body {
-  background-image: url('/img/73.jpg') !important;
+  background-image: url('/img/dark-bg.png') !important;
 }
 
 /* 移动端适配 */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   body {
-      background-size: 100% auto;  /* 让背景自适应宽度，防止重复 */
-      background-attachment: scroll; /* 适配移动端，避免滚动时出现多个背景 */
+      background-size: 100% auto; /* 避免图片过大 */
+      background-position: center;
   }
 
   [data-theme="dark"] body {
       background-size: 100% auto;
+      background-position: center;
   }
 }
