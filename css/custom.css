@@ -245,18 +245,27 @@
   }
 }
 
-/* 默认 Light Mode 背景 */
-:root {
-  --web-bg: url(/img/37.png); 
-}
-
-/* Dark Mode 背景 */
-[data-theme="dark"] {
-  --web-bg: url(/img/73.jpg);
-}
-
-/* 强制覆盖 body 背景 */
+/* 默认背景（Light Mode） */
 body {
-  background: var(--web-bg) no-repeat center center fixed !important;
-  background-size: cover !important;
+  background-image: url('/img/37.png') !important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Dark Mode 背景（支持手机端） */
+[data-theme="dark"] body {
+  background-image: url('/img/73.jpg') !important;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  body {
+      background-size: contain; /* 避免图片过大 */
+      background-position: center;
+  }
+
+  [data-theme="dark"] body {
+      background-size: contain;
+      background-position: center;
+  }
 }
