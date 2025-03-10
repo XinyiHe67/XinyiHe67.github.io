@@ -7,10 +7,39 @@
       
         <title>Hexo框架博客相关常用命令</title>
       
-      <link href="/2025/03/10/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/"/>
-      <url>/2025/03/10/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
+      <link href="/2025/03/10/Hexo%E6%A1%86%E6%9E%B6%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
+      <url>/2025/03/10/Hexo%E6%A1%86%E6%9E%B6%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
       
-        <content type="html"><![CDATA[<p>还是一个测试文件</p>]]></content>
+        <content type="html"><![CDATA[<p>Hexo框架更多常用指令请从 <a href="https://hexo.io/docs/">Documentation</a> 获取详细信息。出现相关问题请于 <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> 浏览查询，或者搜索官方的 <a href="https://github.com/hexojs/hexo/issues">GitHub</a> 寻求进一步的解决。</p><h2 id="创建一个新的博客"><a href="#创建一个新的博客" class="headerlink" title="创建一个新的博客"></a>创建一个新的博客</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h2 id="运行服务"><a href="#运行服务" class="headerlink" title="运行服务"></a>运行服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/server.html">Server</a></p><h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h2 id="部署到远程网址"><a href="#部署到远程网址" class="headerlink" title="部署到远程网址"></a>部署到远程网址</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 综合 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 命令集 </tag>
+            
+            <tag> 技术文档 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
+        <title>Tensorflow 2.7 conda环境配置</title>
+      
+      <link href="/2025/03/10/Tensorflow%202.7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+      <url>/2025/03/10/Tensorflow%202.7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<p>本文记录Tenflow 2.7版本在 anaconda环境上的配置脚本。打开anaconda prompt,输入如下命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">conda create -n tf_gpu python=3.9</span><br><span class="line">conda activate tf_gpu</span><br><span class="line">pip install tensorflow-gpu=2.7</span><br><span class="line">conda install -c conda-forge cudatoolkit=11.6</span><br><span class="line">conda install cudnn=8.3</span><br><span class="line">pip install protobuf==3.20</span><br><span class="line">pip install numpy==1.23.4</span><br><span class="line">conda install keras=2.7</span><br><span class="line">pip install scikeras==0.6</span><br><span class="line">conda install pandas</span><br><span class="line">conda install matplotlib</span><br><span class="line">pip install scikit-learn==1.0.2</span><br></pre></td></tr></table></figure><p>经实际测试，以上各版本的包之间不会存在依赖冲突，如果有绘制高质量图表的需求，可额外引入：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install seaborn</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -24,7 +53,7 @@
             
             <tag> 技术文档 </tag>
             
-            <tag> 命令集 </tag>
+            <tag> 环境配置 </tag>
             
         </tags>
       
@@ -36,8 +65,8 @@
       
         <title>comp9601 W1</title>
       
-      <link href="/2025/03/09/comp9601%20W1/"/>
-      <url>/2025/03/09/comp9601%20W1/</url>
+      <link href="/2025/03/10/comp9601%20W1/"/>
+      <url>/2025/03/10/comp9601%20W1/</url>
       
         <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><h3 id="计算机组成"><a href="#计算机组成" class="headerlink" title="计算机组成"></a>计算机组成</h3><p>在最基本的层面上，计算机是由三个组件组成的设备：</p><ul><li>编译并且执行程序的处理器</li><li>存储数据和程序的存储器</li><li>一种与外界传输数据的机制</li></ul><p>以一个计算机的基本配置为例：</p><table><thead><tr><th>Feature</th><th>Specification</th></tr></thead><tbody><tr><td><strong>Display</strong></td><td>23.8-inch FHD (1920x1080) TrueLife LED-Backlit Touch Display with Wide Viewing Angle (IPS)</td></tr><tr><td><strong>Processor</strong></td><td>7th Generation Intel(R) Core(TM) i5-6200U Processor (3M Cache, up to 2.80 GHz)</td></tr><tr><td><strong>Memory</strong></td><td>8GB Single Channel DDR3L 1600MHz (8GBx1)</td></tr><tr><td><strong>Storage</strong></td><td>1TB 5400 rpm Hard Drive</td></tr><tr><td><strong>Graphics</strong></td><td>Intel HD Graphics 620</td></tr><tr><td><strong>Optical Drive</strong></td><td>DVD Super Multi Drive</td></tr><tr><td><strong>Wireless</strong></td><td>802.11ac + Bluetooth 4.0, Dual Band 2.4&amp;5 GHz, 1x1</td></tr><tr><td><strong>USB Ports</strong></td><td>2 x USB 2.0 Ports, 2 x USB 3.0 Ports</td></tr><tr><td><strong>Operating System</strong></td><td>Windows 10 Home 64-bit</td></tr></tbody></table><p>微处理器：这是系统的“大脑”，主要功能是执行程序指令。拿这台计算机配置来说，微处理器是Intel i5 Processor ，运行频率为 2.80 GHz。</p><p>系统总线：负责在计算机内传输数据，系统总线速度越快越好。这台计算机的系统总线运行速度为 1600 MHz。</p><p>有较大主内存容量的计算机相比那些内存小的计算机而言，可以用更快的速度去运行更大的项目。</p><p>RAM：是 random access memory（随机访问内存）的简称。随机访问意味着当你知道内存位置时，你可以直接访问到内存的内容。</p><p>CPU：Cache（CPU）是一个临时内存的类型，这种内存可以被RAM访问的更加快。</p><p>硬盘：硬盘容量决定了数据的数量和你可以储存的程序的大小，拿上方的计算机配置为例，它可以储存 1TB。5400 rpm 指的是磁盘的转速。通常来说，磁盘旋转速度越快，它发送数据到RAM的速度也就越快（但是这里头同时也涉及到许多其他因素）。</p><p>在计算机系统中，2的幂通常比10的幂更加重要，但是人们往往更容易理解10的幂。</p><h4 id="SI-Prefixes-and-Their-Powers"><a href="#SI-Prefixes-and-Their-Powers" class="headerlink" title="SI Prefixes and Their Powers"></a>SI Prefixes and Their Powers</h4><table><thead><tr><th>Prefix</th><th>Symbol</th><th>Power of 10</th><th>Power of 2</th><th>Prefix</th><th>Symbol</th><th>Power of 10</th><th>Power of 2</th></tr></thead><tbody><tr><td>Kilo</td><td>K</td><td>1 thousand &#x3D; 10³</td><td>2¹⁰ &#x3D; 1024</td><td>Milli</td><td>m</td><td>1 thousandth &#x3D; 10⁻³</td><td>2⁻¹⁰</td></tr><tr><td>Mega</td><td>M</td><td>1 million &#x3D; 10⁶</td><td>2²⁰</td><td>Micro</td><td>μ</td><td>1 millionth &#x3D; 10⁻⁶</td><td>2⁻²⁰</td></tr><tr><td>Giga</td><td>G</td><td>1 billion &#x3D; 10⁹</td><td>2³⁰</td><td>Nano</td><td>n</td><td>1 billionth &#x3D; 10⁻⁹</td><td>2⁻³⁰</td></tr><tr><td>Tera</td><td>T</td><td>1 trillion &#x3D; 10¹²</td><td>2⁴⁰</td><td>Pico</td><td>p</td><td>1 trillionth &#x3D; 10⁻¹²</td><td>2⁻⁴⁰</td></tr><tr><td>Peta</td><td>P</td><td>1 quadrillion &#x3D; 10¹⁵</td><td>2⁵⁰</td><td>Femto</td><td>f</td><td>1 quadrillionth &#x3D; 10⁻¹⁵</td><td>2⁻⁵⁰</td></tr><tr><td>Exa</td><td>E</td><td>1 quintillion &#x3D; 10¹⁸</td><td>2⁶⁰</td><td>Atto</td><td>a</td><td>1 quintillionth &#x3D; 10⁻¹⁸</td><td>2⁻⁶⁰</td></tr><tr><td>Zetta</td><td>Z</td><td>1 sextillion &#x3D; 10²¹</td><td>2⁷⁰</td><td>Zepto</td><td>z</td><td>1 sextillionth &#x3D; 10⁻²¹</td><td>2⁻⁷⁰</td></tr><tr><td>Yotta</td><td>Y</td><td>1 septillion &#x3D; 10²⁴</td><td>2⁸⁰</td><td>Yocto</td><td>y</td><td>1 septillionth &#x3D; 10⁻²⁴</td><td>2⁻⁸⁰</td></tr></tbody></table><p>系统指标中使用的前缀通常应用于底层基本系统为基数 2 而不是基数 10 的情况。</p><h3 id="计算机水平层级"><a href="#计算机水平层级" class="headerlink" title="计算机水平层级"></a>计算机水平层级</h3><ul><li>如果一台机器要能够解决各种各样的问题，它必须能够执行用不同编程语言编写的程序。</li><li>编程经验告诉我们，当问题很大时，我们应该将其分解并使用 “分而治之” 的方法。</li><li>在编程中，我们将一个问题划分为多个模块，然后分别设计每个模块。</li><li>每个模块执行特定任务，只知道如何与其他模块交互。</li></ul><p>我们可以想象机器是从层次构成的，其中每个层次都有一个特定的、不同的功能，并存在假设的机器。具体可以理解为：</p><h4 id="📌1-机器是层次化（Hierarchical）的"><a href="#📌1-机器是层次化（Hierarchical）的" class="headerlink" title="📌1. 机器是层次化（Hierarchical）的"></a>📌1. 机器是层次化（Hierarchical）的</h4><blockquote><p><strong>“我们可以想象机器是从层次构成的”</strong></p></blockquote><ul><li>机器（例如计算机）并不是一个简单的整体，而是由多个层级组成的。</li><li>这些层级之间有 <strong>明确的分工</strong>，高层依赖低层的功能，而低层提供基础支持。</li></ul><h5 id="💡示例：计算机的层次结构"><a href="#💡示例：计算机的层次结构" class="headerlink" title="💡示例：计算机的层次结构"></a>💡示例：计算机的层次结构</h5><p>计算机可以分为以下几个层次：</p><ol><li><strong>逻辑门层</strong>（最底层）：与、或、非门等基本电子元件。</li><li><strong>数字电路层</strong>：寄存器、加法器、存储器等基本硬件电路。</li><li><strong>微架构层</strong>：CPU 内部的缓存、流水线、指令调度等。</li><li><strong>指令集架构层（ISA）</strong>：定义 CPU 如何执行指令，如 x86、ARM。</li><li><strong>操作系统层</strong>：管理硬件资源，如 Windows、Linux。</li><li><strong>应用程序层</strong>（最高层）：如浏览器、游戏、办公软件等。</li></ol><hr><h4 id="📌2-每个层次都有其特定的功能"><a href="#📌2-每个层次都有其特定的功能" class="headerlink" title="📌2. 每个层次都有其特定的功能"></a>📌2. 每个层次都有其特定的功能</h4><blockquote><p><strong>“其中每个层次都有一个特定的、不同的功能”</strong></p></blockquote><ul><li>每个层次负责<strong>不同的任务</strong>，并且这些任务通常是抽象的。</li><li><strong>高层的功能是建立在低层的功能之上的。</strong></li></ul><h5 id="💡示例：计算机的各层功能"><a href="#💡示例：计算机的各层功能" class="headerlink" title="💡示例：计算机的各层功能"></a>💡示例：计算机的各层功能</h5><table><thead><tr><th><strong>层次</strong></th><th><strong>功能</strong></th></tr></thead><tbody><tr><td>物理层（电路）</td><td>电子信号传输</td></tr><tr><td>逻辑层（门电路）</td><td>计算基本逻辑，如加法、存储</td></tr><tr><td>指令集架构层</td><td>解释并执行汇编指令</td></tr><tr><td>操作系统层</td><td>进程管理、内存管理、设备管理</td></tr><tr><td>应用程序层</td><td>提供用户交互，如网页浏览、文档编辑</td></tr></tbody></table><hr><h4 id="📌3-假设的机器（Hypothetical-Machine）"><a href="#📌3-假设的机器（Hypothetical-Machine）" class="headerlink" title="📌3. 假设的机器（Hypothetical Machine）"></a>📌3. 假设的机器（Hypothetical Machine）</h4><blockquote><p><strong>“并存在假设的机器”</strong></p></blockquote><ul><li>这里的 <strong>“假设的机器”</strong> 可以指：<ol><li><strong>抽象模型（Abstraction Model）</strong>：在研究计算机时，我们可以<strong>假设一个理想的机器</strong>，来帮助理解其工作原理。例如：<ul><li><strong>图灵机（Turing Machine）</strong>：计算理论中的数学模型。</li><li><strong>冯·诺依曼模型</strong>：现代计算机的基本架构。</li></ul></li><li><strong>虚拟机（Virtual Machine）</strong>：在实际计算机中，我们可以在软件层面<strong>模拟不同的计算机</strong>，例如：<ul><li><strong>JVM（Java Virtual Machine）</strong>：使 Java 代码可以在不同平台运行。</li><li><strong>x86 模拟器</strong>：在 ARM 设备上运行 x86 指令集的软件。</li></ul></li></ol></li></ul><hr><p>我们将每个层次的假设计算机称为虚拟机，每个层次的虚拟机执行它自己特定的一系列指令。</p><h3 id="计算机系统的层次结构一图流"><a href="#计算机系统的层次结构一图流" class="headerlink" title="计算机系统的层次结构一图流"></a>计算机系统的层次结构一图流</h3><table><thead><tr><th><strong>层级</strong></th><th><strong>名称</strong></th><th><strong>描述</strong></th></tr></thead><tbody><tr><td><strong>第 6 层</strong></td><td>用户层（User Level）</td><td>允许用户与计算机系统交互，我们平时最常见、最熟悉的层次。</td></tr><tr><td><strong>第 5 层</strong></td><td>高级语言层（High-Level Language Level）</td><td>使用高级编程语言（C、C++、Python、Java）编写程序。</td></tr><tr><td><strong>第 4 层</strong></td><td>汇编语言层（Assembly Language Level）</td><td>处理由高级语言编译后的<strong>汇编语言指令</strong>，以及直接在该层编程的指令。</td></tr><tr><td><strong>第 3 层</strong></td><td>系统软件层（System Software Level）</td><td>控制正在执行的进程，保护系统资源，通常直接传递汇编指令，汇编语言指令无需修改即可通过第 3 层</td></tr><tr><td><strong>第 2 层</strong></td><td>机器层（Machine Level）</td><td>也称为<strong>指令集架构（ISA）</strong>，由特定计算机体系结构的指令组成，用机器语言编写的程序不需要编译器或解释器。</td></tr><tr><td><strong>第 1 层</strong></td><td>控制层（Control Level）</td><td><strong>控制单元</strong>解码并执行指令，并且通过系统移动数据。控制单元可<strong>微程序化（microprogrammed）<strong>或</strong>硬件固定（hardwired）</strong>。微程序是用低级语言编写的程序，由硬件实现，硬布线控制单元由直接执行机器指令的硬件组成。</td></tr><tr><td><strong>第 0 层</strong></td><td>数字逻辑层（Digital Logic Level）</td><td>这个层次是我们找到数字电路（芯片）的地方，数字电路由门和电线组成，这些组件实现了所有其他层次的数学逻辑。</td></tr></tbody></table>]]></content>
       
@@ -63,39 +92,10 @@
     
     <entry>
       
-        <title>Tensorflow 2.7 conda环境配置</title>
-      
-      <link href="/2025/03/08/Tensorflow%202.7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-      <url>/2025/03/08/Tensorflow%202.7%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
-      
-        <content type="html"><![CDATA[<p>本文记录Tenflow 2.7版本在 anaconda环境上的配置脚本。打开anaconda prompt,输入如下命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">conda create -n tf_gpu python=3.9</span><br><span class="line">conda activate tf_gpu</span><br><span class="line">pip install tensorflow-gpu=2.7</span><br><span class="line">conda install -c conda-forge cudatoolkit=11.6</span><br><span class="line">conda install cudnn=8.3</span><br><span class="line">pip install protobuf==3.20</span><br><span class="line">pip install numpy==1.23.4</span><br><span class="line">conda install keras=2.7</span><br><span class="line">pip install scikeras==0.6</span><br><span class="line">conda install pandas</span><br><span class="line">conda install matplotlib</span><br><span class="line">pip install scikit-learn==1.0.2</span><br></pre></td></tr></table></figure><p>经实际测试，以上各版本的包之间不会存在依赖冲突，如果有绘制高质量图表的需求，可额外引入：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install seaborn</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 综合 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 环境配置 </tag>
-            
-            <tag> 技术文档 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      
         <title>常用shell脚本</title>
       
-      <link href="/2025/03/08/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/"/>
-      <url>/2025/03/08/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/</url>
+      <link href="/2025/03/10/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/"/>
+      <url>/2025/03/10/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/</url>
       
         <content type="html"><![CDATA[<p>本文储存一些作者平时经常用到的shell脚本，以备不时之需。</p><h2 id="禁止该系统运行脚本"><a href="#禁止该系统运行脚本" class="headerlink" title="禁止该系统运行脚本"></a>禁止该系统运行脚本</h2><p>有些时候在终端运行脚本时，会出现“禁止运行脚本”的报错，这种情况下需要用如下命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Set-ExecutionPolicy Bypass -Scope Process</span><br></pre></td></tr></table></figure><p>即可在当前终端临时许可脚本的运行。</p><h2 id="git相关常用命令"><a href="#git相关常用命令" class="headerlink" title="git相关常用命令"></a>git相关常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git init   <span class="comment">#（创建.git隐藏文件夹）</span></span><br><span class="line">git add *  <span class="comment">#（添加全部文件夹）</span></span><br><span class="line">git commit -m <span class="string">&quot; first commit&quot;</span> <span class="comment">#（将文件夹里的文件先上传至本地git）</span></span><br><span class="line">git remote add origin <span class="comment">#（添加远程github的code网址，注意是SSH code）</span></span><br><span class="line">git branch -M main <span class="comment">#（这个操作是把默认分支从master 切换到main）</span></span><br><span class="line">git push -u origin master <span class="comment">#(虽然默认的是master，选择master大概会创建一个master分支）</span></span><br><span class="line"><span class="comment">#（人生建议，别把文件传到Main里去，不然会很麻烦，不过建议以后建立仓库不要勾选初始化read me文件）</span></span><br></pre></td></tr></table></figure><h2 id="本地上传code到github出现文件缺失"><a href="#本地上传code到github出现文件缺失" class="headerlink" title="本地上传code到github出现文件缺失"></a>本地上传code到github出现文件缺失</h2><p>有些时候把本地的code 上传到Server，再次clone下来时，发现少了些文件。原来是 git 工具不上传一些二进制，pdf，.patch等一些文件。在上传时，git会把这些文件标记为.gitignore文件。所以，我们在上传完文件，使用如下命令检查下：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">find ./ -name <span class="string">&quot;*.gitignore&quot;</span></span><br><span class="line"><span class="comment"># 一旦发现有文件被标志为.gitignore。需要删除：</span></span><br><span class="line">find ./ -name <span class="string">&quot;*.gitignore&quot;</span>  | xargs  <span class="built_in">rm</span></span><br></pre></td></tr></table></figure><h2 id="将VScode上的ipynb文件转换成markdown文件"><a href="#将VScode上的ipynb文件转换成markdown文件" class="headerlink" title="将VScode上的ipynb文件转换成markdown文件"></a>将VScode上的ipynb文件转换成markdown文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">以某次的5318大作业文件为例</span></span><br><span class="line">python -m jupyter nbconvert --to markdown &quot;C:\Users\16624\Desktop\悉大24年S2资料\5318\Assignment1\Assignment1_Comp5318_2024S2 - 副本.ipynb&quot;</span><br></pre></td></tr></table></figure><p>后续若有其他常用指令集，本文仍将持续更新。</p>]]></content>
       
@@ -112,35 +112,6 @@
             <tag> shell </tag>
             
             <tag> bash </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      
-        <title>Hexo框架博客相关常用命令</title>
-      
-      <link href="/2025/03/06/Hexo%E6%A1%86%E6%9E%B6%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
-      <url>/2025/03/06/Hexo%E6%A1%86%E6%9E%B6%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
-      
-        <content type="html"><![CDATA[<p>Hexo框架更多常用指令请从 <a href="https://hexo.io/docs/">Documentation</a> 获取详细信息。出现相关问题请于 <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> 浏览查询，或者搜索官方的 <a href="https://github.com/hexojs/hexo/issues">GitHub</a> 寻求进一步的解决。</p><h2 id="创建一个新的博客"><a href="#创建一个新的博客" class="headerlink" title="创建一个新的博客"></a>创建一个新的博客</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h2 id="运行服务"><a href="#运行服务" class="headerlink" title="运行服务"></a>运行服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/server.html">Server</a></p><h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h2 id="部署到远程网址"><a href="#部署到远程网址" class="headerlink" title="部署到远程网址"></a>部署到远程网址</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>更多信息来源: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 综合 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 技术文档 </tag>
-            
-            <tag> 命令集 </tag>
             
         </tags>
       
