@@ -5,12 +5,12 @@
     
     <entry>
       
-        <title>Test</title>
+        <title>Hexo框架博客相关常用命令</title>
       
-      <link href="/2025/03/10/Just_test/"/>
-      <url>/2025/03/10/Just_test/</url>
+      <link href="/2025/03/10/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/"/>
+      <url>/2025/03/10/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%B5%8B%E8%AF%95/</url>
       
-        <content type="html"><![CDATA[<p>这篇博客只是测试一下自动部署与远程连接cloudflare站点是否成功，请勿查看。</p>]]></content>
+        <content type="html"><![CDATA[<p>还是一个测试文件</p>]]></content>
       
       
       <categories>
@@ -24,7 +24,7 @@
             
             <tag> 技术文档 </tag>
             
-            <tag> 环境配置 </tag>
+            <tag> 命令集 </tag>
             
         </tags>
       
@@ -80,9 +80,9 @@
       
         <tags>
             
-            <tag> 技术文档 </tag>
-            
             <tag> 环境配置 </tag>
+            
+            <tag> 技术文档 </tag>
             
         </tags>
       
@@ -138,9 +138,9 @@
       
         <tags>
             
-            <tag> 命令集 </tag>
-            
             <tag> 技术文档 </tag>
+            
+            <tag> 命令集 </tag>
             
         </tags>
       
