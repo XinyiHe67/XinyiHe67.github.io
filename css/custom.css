@@ -105,7 +105,7 @@
 
 /* Light 模式（默认生效） */
 :root {
-  --card-bg: rgba(255, 255, 255, .9);
+  --card-bg: rgba(255, 255, 255, .95);
 }
 
 /* Light 模式的页脚 */
@@ -247,7 +247,7 @@
 
 /* 默认背景（Light Mode） */
 body {
-  background-image: url('/img/37.png') !important;
+  background-image: url('/img/38.png') !important;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -259,7 +259,7 @@ body {
 
 @media screen and (max-width: 800px) {
   #web_bg {
-      background-image: url('/img/37.png') !important;
+      background-image: url('/img/38.png') !important;
       background-size: cover !important;
       background-position: center center !important;
       background-repeat: no-repeat !important;
